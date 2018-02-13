@@ -1,7 +1,8 @@
 # typing-things
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Tiny game about typing written in TypeScript. With types.
+
+![typing-things](https://user-images.githubusercontent.com/68917/36153882-ba462704-109d-11e8-820b-5b0262b00942.gif)
 
 ## Prerequisites
 
