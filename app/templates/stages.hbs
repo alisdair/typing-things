@@ -1,0 +1,28 @@
+<h1>Typing Things!</h1>
+
+{{#if currentStage}}
+  <div class="level">
+    <h2>Stage {{currentStage.level}}</h2>
+    <div class="level__spacer"></div>
+    <div class="text-grey">
+      {{#if timeElapsed}}
+        {{timeElapsed}}
+      {{else}}
+        Ready…
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="level">
+    <img src={{currentStage.avatar}} class="avatar">
+    <span>{{currentStage.name}}</span>
+  </div>
+
+  {{play-stage
+    stage=currentStage
+    onInput=(action "startClock")
+    onSuccess=(action "nextStage")}}
+{{else}}
+  <p>You win! 🎉</p>
+  <p><button {{action "reset"}}>Play again?</button></p>
+{{/if}}

@@ -1,0 +1,8 @@
+<blockquote>
+  "<span>{{typedPhrase}}</span><span class="text-grey">{{remainingPhrase}}</span>"
+</blockquote>
+
+<input
+  placeholder="Start typing…"
+  value={{response}}
+  oninput={{action "updateResponse" value="target.value"}}>
